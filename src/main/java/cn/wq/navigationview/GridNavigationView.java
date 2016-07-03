@@ -228,9 +228,6 @@ public class GridNavigationView extends ScrimInsetsFrameLayout {
         super.onMeasure(widthSpec, heightSpec);
     }
 
-    /**
-     * @hide
-     */
     @Override
     protected void onInsetsChanged(Rect insets) {
         mPresenter.setPaddingTopDefault(insets.top);
@@ -309,8 +306,6 @@ public class GridNavigationView extends ScrimInsetsFrameLayout {
      * Returns the tint which is applied to our menu items' icons.
      *
      * @see #setItemIconTintList(ColorStateList)
-     *
-     * @attr ref R.styleable#NavigationView_itemIconTint
      */
     @Nullable
     public ColorStateList getItemIconTintList() {
@@ -321,8 +316,6 @@ public class GridNavigationView extends ScrimInsetsFrameLayout {
      * Set the tint which is applied to our menu items' icons.
      *
      * @param tint the tint to apply.
-     *
-     * @attr ref R.styleable#NavigationView_itemIconTint
      */
     public void setItemIconTintList(@Nullable ColorStateList tint) {
         mPresenter.setItemIconTintList(tint);
@@ -332,8 +325,6 @@ public class GridNavigationView extends ScrimInsetsFrameLayout {
      * Returns the tint which is applied to our menu items' icons.
      *
      * @see #setItemTextColor(ColorStateList)
-     *
-     * @attr ref R.styleable#NavigationView_itemTextColor
      */
     @Nullable
     public ColorStateList getItemTextColor() {
@@ -344,8 +335,6 @@ public class GridNavigationView extends ScrimInsetsFrameLayout {
      * Set the text color to be used on our menu items.
      *
      * @see #getItemTextColor()
-     *
-     * @attr ref R.styleable#NavigationView_itemTextColor
      */
     public void setItemTextColor(@Nullable ColorStateList textColor) {
         mPresenter.setItemTextColor(textColor);
@@ -355,8 +344,6 @@ public class GridNavigationView extends ScrimInsetsFrameLayout {
      * Returns the background drawable for our menu items.
      *
      * @see #setItemBackgroundResource(int)
-     *
-     * @attr ref R.styleable#NavigationView_itemBackground
      */
     @Nullable
     public Drawable getItemBackground() {
@@ -367,8 +354,6 @@ public class GridNavigationView extends ScrimInsetsFrameLayout {
      * Set the background of our menu items to the given resource.
      *
      * @param resId The identifier of the resource.
-     *
-     * @attr ref R.styleable#NavigationView_itemBackground
      */
     public void setItemBackgroundResource(@DrawableRes int resId) {
         setItemBackground(ContextCompat.getDrawable(getContext(), resId));
@@ -377,8 +362,6 @@ public class GridNavigationView extends ScrimInsetsFrameLayout {
     /**
      * Set the background of our menu items to a given resource. The resource should refer to
      * a Drawable object or null to use the default background set on this navigation menu.
-     *
-     * @attr ref R.styleable#NavigationView_itemBackground
      */
     public void setItemBackground(@Nullable Drawable itemBackground) {
         mPresenter.setItemBackground(itemBackground);
@@ -398,8 +381,6 @@ public class GridNavigationView extends ScrimInsetsFrameLayout {
 
     /**
      * Set the text appearance of the menu items to a given resource.
-     *
-     * @attr ref R.styleable#NavigationView_itemTextAppearance
      */
     public void setItemTextAppearance(@StyleRes int resId) {
         mPresenter.setItemTextAppearance(resId);
