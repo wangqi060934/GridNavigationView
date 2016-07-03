@@ -19,7 +19,7 @@ compile 'cn.wq.navigationview:GridNavigationView:1.1'
 ```
 
 ##ScreenShot:
-- Default:
-![Default:](https://github.com/wangqi060934/GridNavigationView/tree/master/images/default.png)
-- Grid:
-![Grid:](https://github.com/wangqi060934/GridNavigationView/tree/master/images/grid.png)
+- Default:  
+![Default](https://raw.githubusercontent.com/wangqi060934/GridNavigationView/master/images/default.png)
+- Grid:  
+![Grid](https://raw.githubusercontent.com/wangqi060934/GridNavigationView/master/images/grid.png)
